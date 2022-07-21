@@ -1,0 +1,56 @@
+include formatters/format_date.pug
+include formatters/format_tag.pug
+
+- var updated = formatDate(updatedDate)
+- var created = formatDate(date)
+
+doctype html
+html(lang="en")
+    head
+        title= title + " | Blog"
+        include meta.pug
+        link(rel="stylesheet", href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/base16/dracula.min.css")
+body
+    #header
+        h1
+            a(href="/") Reese<br>Schultz
+
+    p.go-back.for-post
+        a.change-color(href='/blog') ...back to the blog!
+
+    #content
+        #post
+            h2= title
+
+            if !hidePostInfo
+                if excerpt
+                    p= excerpt
+
+                #post-info.for-post
+                    ul.tags.for-post
+                        for tag in tags
+                            li.tag(class=tag)
+                                a(href=`/blog/tag/${tag}`)= formatTag(tag)               
+
+                    if updatedDate && date && updated != created
+                        p.date.for-post Last updated on #{updated}.
+
+                    if date
+                        p.date.for-post Created on #{created}.
+
+            | !{content}
+
+    include social.pug
+
+    #footer
+        #copyright-and-license
+            p#copyright © 2021-2022 
+                a(href="/") Reese Schultz
+
+            a#license(href="/license") License
+
+script(src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js")
+script if (hljs) hljs.highlightAll();
+
+script(src="//cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js")
+script(src="/copy.js")

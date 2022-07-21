@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0.25rem;
+    font-weight: bold;
+}
+
+h1,
+h1>a,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $light;
+}
+
+h1>a {
+    font-size: 2.8rem;
+}
+
+h1>a:hover {
+    text-decoration: none;
+    color: $yellow;
+}
+
+h2,
+h2>a {
+    font-size: 2rem;
+}
+
+h3,
+h3>a {
+    font-size: 1.75rem;
+}
+
+h4,
+h4>a {
+    font-size: 1.5rem;
+}
+
+p {
+    color: $off-light;
+    margin-top: 1rem;
+}
+
+p,
+a {
+    font-size: 1.25rem;
+}
+
+a {
+    color: $blue;
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: url('/favicon.ico'), auto;
+    text-decoration: underline;
+}
+
+blockquote>p {
+    font-size: 1.2rem;
+    line-height: 1.75rem;
+}
+
+#content>ul.posts>li.post>h2.title {
+    margin-top: 0;
+    padding-top: 1rem;
+}
+
+#header>h1 {
+    padding-top: 0.8rem;
+    padding-left: 2rem;
+    line-height: 2.1rem;
+}
+
+#landing>h1 {
+    font-size: 5rem;
+    line-height: 5.5rem;
+    cursor: default;
+}
+
+#filtered-by>p {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+li.post>p.excerpt {
+    color: $light;
+}
+
+p.go-back>a::before {
+    content: '👈 ';
+}
+
+p.go-back {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+p.go-back.for-tag {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+p.go-back.for-post {
+    margin-top: 2rem;
+}
+
+#post-info>p.date {
+    color: $grey;
+}
+
+#post-info>p.date.for-post {
+    margin-bottom: 0;
+    margin-top: 0.25rem;
+    padding-bottom: 0;
+}
+
+#footer>a,
+#copyright-and-license>p#copyright,
+#copyright-and-license>p#copyright>a,
+#copyright-and-license>a,
+#post-info>p.date {
+    font-size: 1rem !important;
+}
+
+#post-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+#post-info.for-post {
+    display: block;
+}
+
+#pagination>ul>li>a {
+    font-size: 1.2rem;
+}
+
+#pagination>p {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    color: $grey;
+}
+
+#pagination>ul>li>a.newest::before {
+    content: '| ';
+}
+
+#pagination>ul>li>a.newer::before {
+    content: '← ';
+}
+
+#pagination>ul>li>a.older::after {
+    content: ' →';
+}
+
+#pagination>ul>li>a.oldest::after {
+    content: ' |';
+}
+
+.rainbow {
+    background-image: $rainbow;
+    background-repeat: repeat;
+    background-size: 100%;
+    background-clip: text;
+    box-sizing: border-box;
+    font-feature-settings: "onum";
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: move-background 30000s infinite;
+}

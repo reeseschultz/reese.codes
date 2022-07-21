@@ -1,0 +1,10 @@
+metas:
+  domain: reese.codes
+  site: Reese Schultz
+  description: Reese's website about programming.
+  twitter: "@ReeseCodes"
+  lang: en
+  generator: true
+
+mergedKeys:
+  metas: object

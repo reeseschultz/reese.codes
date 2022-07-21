@@ -1,0 +1,18 @@
+doctype html
+html(lang="en")
+    head
+        title= metas.site + " | Home"
+        include meta.pug
+
+body
+    #container
+        #landing
+            h1#landing-h1.rainbow Hi, I'm Reese Schultz
+
+            content !{content}
+
+            .to-the-blog-container
+                .wiggle
+                    a.change-color(href='/blog') 👉 ...to the blog!
+
+script(src="jongler.js")

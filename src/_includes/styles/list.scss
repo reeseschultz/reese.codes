@@ -1,0 +1,88 @@
+#pagination>ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#content>ul.posts {
+    margin: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#content>ul.posts>li.post {
+    border-bottom: 1px dashed $off-light;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#content>ul.posts>li.post:first-child {
+    padding-top: 1rem;
+}
+
+#post>ol,
+#post>ul {
+    color: $off-light;
+    font-size: 1.2rem;
+}
+
+#post>ol>li,
+#post>ul>li {
+    margin-bottom: 0.5rem;
+}
+
+#post>ol>li:last-child,
+#post>ul>li:last-child {
+    margin-bottom: 0;
+}
+
+ul.social {
+    max-width: 768px;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-top: 3rem;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.social>li>a {
+    fill: $light;
+}
+
+ul.social>li.github>a:hover {
+    fill: $yellow;
+}
+
+ul.social>li.youtube>a:hover {
+    fill: $red;
+}
+
+ul.social>li.twitter>a:hover {
+    fill: $blue;
+}
+
+ul.social>li.github>a>svg {
+    margin-top: 0.15rem;
+    width: 33px;
+    height: 33px;
+}
+
+ul.social>li.youtube>a>svg {
+    margin-top: -0.25rem;
+    width: 40px;
+    height: 40px;
+}
+
+ul.social>li.twitter>a>svg {
+    width: 36px;
+    height: 36px;
+}

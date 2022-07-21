@@ -1,0 +1,26 @@
+include formatters/format_date.pug
+include formatters/format_tag.pug
+
+doctype html
+
+html(lang="en")
+    head
+        title= metas.site + " | Blog"
+        include meta.pug
+
+body
+    #header
+        h1
+            a(href="/") Reese<br>Schultz
+
+    #content
+        include posts.pug
+
+    include social.pug
+
+    #footer
+        #copyright-and-license
+            p#copyright © 2021-2022 
+                a(href="/") Reese Schultz
+
+            a#license(href="/license") License

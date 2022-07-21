@@ -1,0 +1,46 @@
+if (filteredBy)
+    #filtered-by
+        p
+            | (Posts filtered by 
+            span.tag(class=filteredBy)
+                a= formatTag(filteredBy)
+            | .)
+    p.go-back.for-tag
+        a.change-color(href='/blog') ...back to the blog!
+
+ul.posts
+    //- `results` comes from *.tmpl.js
+    for post in results
+        li.post
+            h2.title
+                a(href=post.data.url)= post.data.title
+
+            p.excerpt= post.data.excerpt
+
+            #post-info
+                p.date= formatDate(post.data.date)
+
+                ul.tags
+                    for tag in post.data.tags
+                        li.tag(class=tag)
+                            a(href=`/blog/tag/${tag}`)= formatTag(tag)
+
+if pagination.totalPages != 1
+    #pagination
+        ul
+            if pagination.page > 1
+                li
+                    a.newest(href=pathToPage)= "Newest" 
+            if pagination.page > 2 && pagination.previous
+                li.previous
+                    a.newer(href=pagination.previous)= "Newer"
+
+            if pagination.page < pagination.totalPages - 1 && pagination.next
+                li.next
+                    a.older(href=pagination.next)= "Older"
+
+            if (pagination.page != pagination.totalPages)
+                li
+                    a.oldest(href=`${pathToPage}${pagination.totalPages}`)= "Oldest"
+
+        p= `Page ${pagination.page} of ${pagination.totalPages}`

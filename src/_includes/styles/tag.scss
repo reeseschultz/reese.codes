@@ -1,0 +1,69 @@
+#post-info>ul.tags {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding-top: 0.2rem;
+}
+
+#post-info>ul.tags.for-post {
+    display: inline-flex;
+    padding: 0;
+    margin-top: 0;
+}
+
+#post-info>ul.tags>li.tag {
+    margin-right: 0.5rem;
+}
+
+#post-info>ul.tags>li.tag:last-child {
+    margin-right: 0;
+}
+
+#filtered-by>p>span.tag {
+    padding-right: 0.25rem;
+}
+
+#filtered-by>p>span.tag>a {
+    cursor: default;
+}
+
+.tag>a {
+    border: 3px solid;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 0.75rem;
+    height: 15px;
+    color: $light;
+}
+
+.tag.rambling>a {
+    border-color: $yellow;
+}
+
+.tag.csharp>a {
+    border-color: $purple;
+}
+
+.tag.typescript>a {
+    border-color: $blue;
+}
+
+.tag.misc>a {
+    border-color: $teal;
+}
+
+.tag.unity>a {
+    border-color: $light;
+}
+
+.tag.tutorial>a {
+    border-color: $blue;
+}
+
+.tag>a:hover {
+    text-decoration: none;
+}
+
+.tag:hover {
+    animation: wiggle 0.5s ease-in-out infinite alternate;
+}
