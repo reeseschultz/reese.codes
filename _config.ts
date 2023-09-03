@@ -9,28 +9,23 @@ import metas from "lume/plugins/metas.ts";
 import date from "lume/plugins/date.ts";
 import md from "https://jspm.dev/markdown-it-container";
 
-const site = lume({
-  src: "./src",
-}, {
-  markdown: {
-    plugins: [md],
+const site = lume(
+  {
+    src: "./src",
   },
-});
-
-const mdInstance = site.formats.get(".md").engine;
-
-// Add `target="_blank"` to all Markdown links:
-// TODO: Use new feature added per https://github.com/lumeland/lume/issues/218.
-mdInstance.engine.renderer.rules.link_open = (
-  tokens,
-  idx,
-  options,
-  env,
-  self,
-) => {
-  tokens[idx].attrPush(["target", "_blank"]);
-  return self.renderToken(tokens, idx, options, env, self);
-};
+  {
+    markdown: {
+      plugins: [md],
+      rules: {
+        // Add `target="_blank"` to all Markdown links:
+        link_open: (tokens, idx, options, env, self) => {
+          tokens[idx].attrPush(["target", "_blank"]);
+          return self.renderToken(tokens, idx, options, env, self);
+        },
+      },
+    },
+  }
+);
 
 site.use(pug());
 site.use(relative_urls());
