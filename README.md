@@ -33,9 +33,9 @@ it's opinionated. You'll notice these choices:
 
 ## Running & Deploying
 
-1. Get [Deno](https://deno.land) and [Lume](https://lume.land)
+1. Get [Deno](https://deno.land)
 2. `cd` to local clone or fork
-3. `lume --serve`
+3. `deno task serve`
 4. `deno run --allow-all --unstable deploy.ts`
 
 `deploy.ts` is hard-coded for deploying my website to GitHub Pages—you'll want
