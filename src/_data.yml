@@ -5,6 +5,8 @@ metas:
   twitter: "@ReeseCodes"
   lang: en
   generator: true
+  name: Reese
+  surname: Schultz
 
 mergedKeys:
   metas: object
