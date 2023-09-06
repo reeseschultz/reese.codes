@@ -5,6 +5,11 @@ metas:
   twitter: "@ReeseCodes"
   lang: en
   generator: true
+  name: Reese
+  surname: Schultz
+  githubUsername: reeseschultz
+  youtubeChannelId: UC9DCrtoQBTBrIyZ4mXNzlTA
+  twitterUsername: ReeseCodes
 
 mergedKeys:
   metas: object

@@ -52,6 +52,10 @@ it's opinionated. You'll notice these choices:
 to modify it for your purposes, along with configuration and metadata. And
 remember to replace the content!
 
+## Configuring
+- `src/_data.yml` file for customizing general data across the site.
+- `src/blog` folder for the blog content.
+
 ## Contributing
 
 Feel free to open issues or pull requests.

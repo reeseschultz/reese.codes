@@ -13,7 +13,7 @@ html(lang="en")
 body
     #header
         h1
-            a(href="/") Reese<br>Schultz
+            a(href="/") #{metas.name}<br>#{metas.surname}
 
     p.go-back.for-post
         a.change-color(href='/blog') ...back to the blog!
@@ -45,7 +45,7 @@ body
     #footer
         #copyright-and-license
             p#copyright © 2021-2022 
-                a(href="/") Reese Schultz
+                a(href="/")  #{metas.name} #{metas.surname}
 
             a#license(href="/license") License
 
