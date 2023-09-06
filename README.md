@@ -31,12 +31,22 @@ it's opinionated. You'll notice these choices:
   thing
 - No creepy analytics
 
-## Running & Deploying
+## Running 
 
-1. Get [Deno](https://deno.land) and [Lume](https://lume.land)
-2. `cd` to local clone or fork
-3. `lume --serve`
-4. `deno run --allow-all --unstable deploy.ts`
+### With Deno
+1. Get [Deno](https://deno.land)
+1. `cd` to local clone or fork
+1. `deno task serve`
+
+### With Docker Compose
+1. Get [Docker](https://www.docker.com)
+1. `cd` to local clone or fork
+1. `docker-compose up`
+
+## Deploying
+1. Get [Deno](https://deno.land)
+1. `cd` to local clone or fork
+1. `deno run --allow-all --unstable deploy.ts`
 
 `deploy.ts` is hard-coded for deploying my website to GitHub Pages—you'll want
 to modify it for your purposes, along with configuration and metadata. And
