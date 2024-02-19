@@ -1,15 +1,5 @@
 $background-target: 2147483647vw;
 
-@keyframes move-background {
-    from {
-        background-position: 0 0;
-    }
-
-    to {
-        background-position: $background-target 0;
-    }
-}
-
 @keyframes wiggle {
     from {
         transform: rotate(-9deg);
