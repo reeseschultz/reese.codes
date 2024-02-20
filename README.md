@@ -1,20 +1,15 @@
 # `reese.codes`
 
-> 🕹️ [Reese's](https://github.com/reeseschultz) website about programming. 🕹️
+> 🕹️ [Reese's](https://github.com/reeseschultz) website. 🕹️
 
 [Check it out 👀...](https://reese.codes)
 
 ## About
 
 My website is generated with [Lume](https://lume.land), which runs on
-[Deno](https://deno.land). The site used to be a fork of
-[11r](https://github.com/reeseschultz/11r), but the trappings and quirks of the
-Node/NPM ecosystem became unbearably annoying for this particular dev ⚰️. While
-[Eleventy](https://www.11ty.dev), used by 11r, is a great solution that is
-lightyears ahead of most static site generators, Lume is even more so. Find out
-for yourself.
+[Deno](https://deno.land).
 
-One reason for this site being open source is so you can fork it. That said,
+This site is open source mainly so you can fork it to use with your own content. That said,
 it's opinionated. You'll notice these choices:
 
 - Templating with [Pug](https://pugjs.org) (it's terse)
