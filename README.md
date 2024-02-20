@@ -31,19 +31,23 @@ it's opinionated. You'll notice these choices:
   thing
 - No creepy analytics
 
-## Running 
+## Running
 
 ### With Deno
+
 1. Get [Deno](https://deno.land)
+1. Get [Lume](https://lume.land)
 1. `cd` to local clone or fork
-1. `deno task serve`
+1. `lume serve`
 
 ### With Docker Compose
+
 1. Get [Docker](https://www.docker.com)
 1. `cd` to local clone or fork
 1. `docker-compose up`
 
-## Deploying
+## Manual Deployment
+
 1. Get [Deno](https://deno.land)
 1. `cd` to local clone or fork
 1. `deno run --allow-all --unstable deploy.ts`
@@ -53,6 +57,7 @@ to modify it for your purposes, along with configuration and metadata. And
 remember to replace the content!
 
 ## Configuring
+
 - `src/_data.yml` file for customizing general data across the site.
 - `src/blog` folder for the blog content.
 
