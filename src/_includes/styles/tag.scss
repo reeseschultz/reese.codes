@@ -48,16 +48,16 @@
     border-color: $blue;
 }
 
-.tag.misc>a {
+.tag.godot>a {
     border-color: $teal;
+}
+
+.tag.mono>a {
+    border-color: $red;
 }
 
 .tag.unity>a {
     border-color: $light;
-}
-
-.tag.tutorial>a {
-    border-color: $blue;
 }
 
 .tag>a:hover {

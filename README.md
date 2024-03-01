@@ -33,7 +33,7 @@ it's opinionated. You'll notice these choices:
 1. Get [Deno](https://deno.land)
 1. Get [Lume](https://lume.land)
 1. `cd` to local clone or fork
-1. `lume serve`
+1. `lume --serve`
 
 ### With Docker Compose
 
