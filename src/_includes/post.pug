@@ -1,8 +1,20 @@
 include formatters/format_date.pug
 include formatters/format_tag.pug
 
+- var currentYear = new Date().getFullYear()
+
 - var updated = formatDate(updatedDate)
 - var created = formatDate(date)
+
+- var posts = search.pages("type=post", "date=desc", Number.MAX_SAFE_INTEGER)
+- var thisPageIndex = -1
+each post, i in posts
+    if post.data.title === title
+        - thisPageIndex = i
+        - break
+
+- var previous = thisPageIndex < posts.length - 1 ? posts[thisPageIndex + 1].data.url : null
+- var next = thisPageIndex > 0 ? posts[thisPageIndex - 1].data.url : null
 
 doctype html
 html(lang="en")
@@ -40,11 +52,28 @@ body
 
             | !{content}
 
+            if next || previous
+                div.next-or-previous
+
+                    if next
+                        p
+                            span Next Post: 
+                            a(href=`${next}`) #{posts[thisPageIndex - 1].data.title}
+
+                    if previous
+                        p
+                            span Previous Post: 
+                            a(href=`${previous}`) #{posts[thisPageIndex + 1].data.title}
+
+    if (title != "License")
+        p.go-back.for-post
+            a.change-color(href='/blog') ...back to the blog!
+
     include social.pug
 
     #footer
         #copyright-and-license
-            p#copyright © 2021 
+            p#copyright © 2021-#{currentYear}
                 a(href="/")  #{metas.name} #{metas.surname}
 
             a#license(href="/license") License

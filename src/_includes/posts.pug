@@ -5,6 +5,7 @@ if (filteredBy)
             span.tag(class=filteredBy)
                 a= formatTag(filteredBy)
             | .)
+
     p.go-back.for-tag
         a.change-color(href='/blog') ...back to the blog!
 
@@ -44,3 +45,7 @@ if pagination.totalPages != 1
                     a.oldest(href=`${pathToPage}${pagination.totalPages}`)= "Oldest"
 
         p= `Page ${pagination.page} of ${pagination.totalPages}`
+
+if (filteredBy)
+    p.go-back.for-tag
+        a.change-color(href='/blog') ...back to the blog!

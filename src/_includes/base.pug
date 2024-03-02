@@ -1,6 +1,8 @@
 include formatters/format_date.pug
 include formatters/format_tag.pug
 
+- var currentYear = new Date().getFullYear()
+
 doctype html
 
 html(lang="en")
@@ -20,7 +22,7 @@ body
 
     #footer
         #copyright-and-license
-            p#copyright © 2021 
+            p#copyright © 2021-#{currentYear} 
                 a(href="/") #{metas.name} #{metas.surname}
 
             a#license(href="/license") License

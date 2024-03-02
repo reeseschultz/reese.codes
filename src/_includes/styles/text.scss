@@ -104,6 +104,26 @@ p.go-back {
     margin-bottom: 0;
 }
 
+.next-or-previous {
+    padding: 0;
+    margin: 0;
+    margin-top: 2.5rem;
+}
+
+.next-or-previous>p {
+    font-size: 0.9rem;
+}
+
+.next-or-previous>p>span {
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-right: 0.25rem;
+}
+
+.next-or-previous>p>a {
+    font-size: 0.9rem;
+}
+
 p.go-back.for-tag {
     padding-left: 2rem;
     padding-right: 2rem;
