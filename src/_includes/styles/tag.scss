@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     list-style-type: none;
-    padding-top: 0.2rem;
+    padding-top: 1rem;
 }
 
 #post-info>ul.tags.for-post {
@@ -33,7 +33,7 @@
     padding: 0.5rem;
     font-size: 0.75rem;
     height: 15px;
-    color: $light;
+    color: $off-light;
 }
 
 .tag.rambling>a {

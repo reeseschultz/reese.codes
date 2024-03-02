@@ -19,7 +19,7 @@ ul.posts
             p.excerpt= post.data.excerpt
 
             #post-info
-                p.date= formatDate(post.data.date)
+                p.date.for-list= formatDate(post.data.date)
 
                 ul.tags
                     for tag in post.data.tags

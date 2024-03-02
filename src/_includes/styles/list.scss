@@ -15,9 +15,11 @@
 }
 
 #content>ul.posts>li.post {
-    border-bottom: 1px dashed $off-light;
+    border-bottom: 1px solid $grey;
     padding-left: 1rem;
     padding-right: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 #content>ul.posts>li.post:first-child {

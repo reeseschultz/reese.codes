@@ -32,16 +32,19 @@ h1>a:hover {
 h2,
 h2>a {
     font-size: 2rem;
+    line-height: 1.05em;
 }
 
 h3,
 h3>a {
     font-size: 1.75rem;
+    line-height: 1.05em;
 }
 
 h4,
 h4>a {
     font-size: 1.5rem;
+    line-height: 1.05em;
 }
 
 p {
@@ -133,13 +136,13 @@ p.go-back.for-post {
     margin-top: 2rem;
 }
 
-#post-info>p.date {
+#post-info>p.date.for-list {
     color: $grey;
+    padding-top: 1rem;
 }
 
 #post-info>p.date.for-post {
     margin-bottom: 0;
-    margin-top: 0.25rem;
     padding-bottom: 0;
 }
 

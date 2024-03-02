@@ -34,7 +34,7 @@ blockquote {
 
 hr {
     border: none;
-    border-bottom: 1px dashed $grey;
+    border-bottom: 1px solid $grey;
 }
 
 #container {
@@ -72,7 +72,7 @@ hr {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    outline: 1px dashed $grey;
+    outline: 1px solid $grey;
     border: 0.4rem solid transparent;
     width: 75%;
     height: auto;
