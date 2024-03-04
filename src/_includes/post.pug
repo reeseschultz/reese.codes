@@ -55,8 +55,8 @@ body
 
             | !{content}
 
-            if next || previous
-                div.next-or-previous
+            if title != "License" && (next || previous)
+                .next-or-previous
 
                     if next
                         p
