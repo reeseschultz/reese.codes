@@ -176,7 +176,7 @@ canvas#jongler {
         width: 100%;
     }
 
-    #sidebar {
+    #sidebar, #post-info>ul.tags.for-list>li.tag:not(:first-child) {
         display: none;
     }
 
