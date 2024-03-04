@@ -14,16 +14,19 @@
     padding-right: 1rem;
 }
 
-#content>ul.posts>li.post {
+#content>ul.posts>li.post-container {
     border-bottom: 1px solid $grey;
     padding-left: 1rem;
     padding-right: 1rem;
     padding-bottom: 1rem;
     margin-bottom: 1rem;
+    min-height: 225px;
+    display: flex;
+    align-items: center;
 }
 
-#content>ul.posts>li.post:first-child {
-    padding-top: 1rem;
+#content>ul.posts>li.post-container>.post {
+    width: 100%;
 }
 
 #post>ol,
