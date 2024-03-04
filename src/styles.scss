@@ -106,11 +106,20 @@ hr {
 }
 
 #copyright-and-license {
-    display: flex;
-    flex-flow: row wrap;
-    min-width: 500px;
-    justify-content: space-evenly;
-    align-items: center;
+    // display: flex;
+    // flex-flow: row wrap;
+    // min-width: 400  px;
+    justify-content: center;
+    // align-items: space-evenly;
+    text-align: center;
+}
+
+#copyright-and-license>p, #copyright-and-license>p>a {
+    font-size: 0.8rem;
+}
+
+#copyright-and-license>p {
+    margin: 0;
 }
 
 #filtered-by {

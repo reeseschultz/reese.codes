@@ -14,7 +14,7 @@ without explicit permission from me. You may email me about that at
 
 ### Code
 
-Furthermore, and unless otherwise specified, the code for this site,
+Unless otherwise specified, the code for this site,
 contributions to
 [its corresponding Git repository](https://github.com/reeseschultz/reese.codes),
 and all substantial code snippets available from it, are bound by
