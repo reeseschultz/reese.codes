@@ -16,6 +16,8 @@ each post, i in posts
 - var previous = thisPageIndex < posts.length - 1 ? posts[thisPageIndex + 1].data.url : null
 - var next = thisPageIndex > 0 ? posts[thisPageIndex - 1].data.url : null
 
+- var shouldDisplayUpdated = updatedDate && updated != created
+
 doctype html
 html(lang="en")
     head
@@ -44,11 +46,12 @@ body
                             li.tag(class=tag)
                                 a(href=`/blog/tag/${tag}`)= formatTag(tag)               
 
-                    if updatedDate && date && updated != created
-                        p.date.for-post Last updated on #{updated}.
-
                     if date
-                        p.date.for-post Created on #{created}.
+                        p.date.for-post
+                            span Created on #{created}. 
+
+                            if shouldDisplayUpdated
+                                span Updated on #{updated}.
 
             | !{content}
 
