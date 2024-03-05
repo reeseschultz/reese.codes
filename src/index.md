@@ -7,7 +7,7 @@ layout: landing.pug
 > problems, indicating gaps in toolchains and knowledge. Closing these gaps is a
 > passion of mine.
 
-Have questions or comments? To get in touch, email
+Have questions or comments? Email
 <a href="mailto:contact@reese.codes">contact@reese.codes</a>.
 
 ---

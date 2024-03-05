@@ -50,6 +50,7 @@ h4>a {
 p {
     color: $off-light;
     margin-top: 1rem;
+    line-height: 1.625rem;
 }
 
 p,
@@ -68,8 +69,8 @@ a:hover {
 }
 
 blockquote>p {
-    font-size: 1.2rem;
-    line-height: 1.75rem;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
 }
 
 #content>ul.posts>li.post-container>.post>h2.title {
@@ -84,8 +85,8 @@ blockquote>p {
 }
 
 #landing>h1 {
-    font-size: 5rem;
-    line-height: 5.5rem;
+    font-size: 3rem;
+    line-height: 3rem;
     cursor: default;
 }
 
@@ -115,6 +116,8 @@ p.go-back {
 
 .next-or-previous>p {
     font-size: 0.9rem;
+    margin: 0;
+    padding: 0;
 }
 
 .next-or-previous>p>span {

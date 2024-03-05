@@ -28,8 +28,11 @@ blockquote {
     padding-bottom: 0;
     padding-left: 2rem;
     padding-right: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     font-size: 1.5rem;
     line-height: 2.5rem;
+    font-style: italic;
 }
 
 hr {
@@ -139,7 +142,7 @@ canvas#jongler {
     display: flex;
     justify-content: flex-end;
     width: 100%;
-    margin-top: 2em;
+    margin-top: 1em;
     margin-bottom: 3rem;
     padding-bottom: 3rem;
 }
